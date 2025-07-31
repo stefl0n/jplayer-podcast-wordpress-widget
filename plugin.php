@@ -289,4 +289,4 @@ class JPlayer_Podcast extends WP_Widget
 
 } // end class
 
-add_action('widgets_init', create_function('', 'register_widget("JPlayer_Podcast");'));
+add_action('widgets_init', function() { register_widget("JPlayer_Podcast");} );
